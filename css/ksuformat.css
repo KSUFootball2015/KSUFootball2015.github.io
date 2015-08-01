@@ -5,6 +5,7 @@ body {
 
 .col-centered{
 float: none;
+width: auto;
 margin: 0 auto;
 }
 
