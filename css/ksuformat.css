@@ -6,4 +6,5 @@ body {
 #birthKSU {
   width: auto;
   margin: 0 auto;
+  display: block;
 }
