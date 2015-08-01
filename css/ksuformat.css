@@ -4,5 +4,6 @@ body {
 }
 
 #birthKSU {
-  align-content: center;
+  width: auto;
+  margin: 0 auto;
 }
