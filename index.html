@@ -18,18 +18,13 @@
     <link href="css/ksuformat.css" rel="stylesheet">
 
     <!-- AngularJS reference  -->
-    <script src="js/angular.js"></script>
-    <script src="js/angular-animate.js"></script>
-    <script src="js/angular-route.js"></script>
-    <script type="text/javascript" src="js/ui-bootstrap-tpls-0.12.1.js"></script>
-    <script src="js/ksuapp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,8 +35,7 @@
 
 </head>
 
-<body ng-app="angularapp">
-  <div ng-controller="KSUFootballController">
+<body>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -57,35 +51,35 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">September <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">September <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#/south-dakota">5 vs South Dakota</a></li>
-            <li><a href="#/UTSA">12 @ UTSA</a></li>
-            <li><a href="#/LTech">19 vs Louisiana Tech</a></li>
+            <li><a href="http://KSUFootball2015.github.io">5 vs South Dakota</a></li>
+            <li><a href="/UTSA">12 @ UTSA</a></li>
+            <li><a href="/LTech">19 vs Louisiana Tech</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">October <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">October <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#/Oklahoma_St">3 @ Oklahoma St</a></li>
-            <li><a href="#/TCU">10 vs TCU</a></li>
-            <li><a href="#/Oklahoma">17 vs Oklahoma</a></li>
-            <li><a href="#/Texas">24 @ Texas</a></li>
+            <li><a href="/Oklahoma_St">3 @ Oklahoma St</a></li>
+            <li><a href="/TCU">10 vs TCU</a></li>
+            <li><a href="/Oklahoma">17 vs Oklahoma</a></li>
+            <li><a href="/Texas">24 @ Texas</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">November <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">November <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#/Baylor">5 vs Baylor</a></li>
-            <li><a href="#/Texas_Tech">14 @ Texas Tech</a></li>
-            <li><a href="#/Iowa_St">21 vs Iowa St</a></li>
-            <li><a href="#/Kansas">28 @ Kansas</a></li>
+            <li><a href="/Baylor">5 vs Baylor</a></li>
+            <li><a href="/Texas_Tech">14 @ Texas Tech</a></li>
+            <li><a href="/Iowa_St">21 vs Iowa St</a></li>
+            <li><a href="/Kansas">28 @ Kansas</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">December <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">December <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#/West_Virginia">5 vs West Virginia</a></li>
+            <li><a href="/West_Virginia">5 vs West Virginia</a></li>
           </ul>
         </li>
       </ul>
@@ -96,17 +90,59 @@
     <!-- Page Content -->
     <div class="container">
 
-      <!--ngView is where all controllers and templates are switched  isDownwards refers to if the path is forward or backward-->
-        <div>
-          <div ng-view ng-class="{slide: true, left: isDownwards}"></div> 
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>KSU Cat Football Countdown Clock</h1>
+                    <div id="tc_8922"><a title="KSU vs South Dakota" href="http://www.tickcounter.com/countdown/20150905061000pm/w5260/1/KSU_vs_South_Dakota">KSU vs South Dakota</a> <a title="Countdown online" href="http://www.tickcounter.com">Countdown</a></div><script type="text/javascript">(function(){var s = document.createElement("script");s.src = "http://www.tickcounter.com/widget/countdown/20150905061000pm/w5260/1/8922/0/ffffff512888ffffff/KSU_vs_South_Dakota";s.async = "async";s.type = "text/javascript";var x = document.getElementById("tc_8922");x.insertBefore(s,x.lastChild);}());</script>
+            </div>
         </div>
-        <!--end ngView -->
+        <!-- /.row -->
+        <br>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/-u_mmbfbpME" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/cPnMX2hXcGI" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div><br>
+
+        <!-- KSU Football Gameday Spotify Playlist -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>K-State Gameday <a href="https://play.spotify.com/user/troydhorton/playlist/75nJOJXHfUNzBW2cou2mAX?play=true&utm_source=open.spotify.com&utm_medium=open" target="_blank">Playlist</a></h3>
+            </div>
+        </div>
+        <!--
+          <div class="col-lg-6">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/-RwjKQLaI1o" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/jKDYoZ56-2U" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/eamqIHrlw9I" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/WasHzhGsAIk" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6">
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/cPnMX2hXcGI" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>   -->
 
     </div>
     <!-- /.container -->
     <br><br><br>
-
-  </div>
 
 </body>
 
